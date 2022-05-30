@@ -1,0 +1,9 @@
+.Card{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.title{
+  background-color: black;
+}
