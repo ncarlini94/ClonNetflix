@@ -8,12 +8,12 @@ const Homepage = () => {
   return (
     <>
       <Banner />
-      <Separator height={"40px"} />
+      <Separator height={"60px"} />
       <Carousel
         entity={apiEntity.popularMovies}
         title={"Peliculas populares"}
       />
-       <Separator height={"40px"} />
+      <Separator height={"40px"} />
       <Carousel
         entity={apiEntity.topRatedMovies}
         title="Peliculas mejor puntuadas"

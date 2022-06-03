@@ -1,11 +1,11 @@
 import React from "react";
 
 const Separator = ({ height }) => {
-return (
+  return (
     <div>
-    <div style={{ height: height }}></div>
+      <div style={{ height: height }}></div>
     </div>
-);
+  );
 };
 
 export default Separator;

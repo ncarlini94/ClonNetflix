@@ -7,30 +7,30 @@ import { settingsSlider } from "./settings";
 const Carousel = ({ entity, title }) => {
   const [values, loading, error] = useApi(entity);
 
-return (
+  return (
     <>
-    <div>
+      <div>
         <h1
-        style={{
-        color: "white",
-        }}
+          style={{
+            color: "white",
+          }}
         >
-        {title}
+          {title}
         </h1>
-    </div>
-    <Slider {...settingsSlider}>
-    {loading ? (
-        <div>Loading...</div>
+      </div>
+      <Slider {...settingsSlider}>
+        {loading ? (
+          <div>Loading...</div>
         ) : (
-        values.map((value) => (
+          values.map((value) => (
             <Card
-            key={value.id}
-            title={value.title || value.name}
-            imgPath={value.backdrop_path}
+              key={value.id}
+              title={value.title || value.name}
+              imgPath={value.backdrop_path}
             />
-        ))
+          ))
         )}
-    </Slider>
+      </Slider>
     </>
   );
 };

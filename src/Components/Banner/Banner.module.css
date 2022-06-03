@@ -1,13 +1,13 @@
 .banner_container {
-    width: 100vw;
-    height: 80vh;
+    width: auto;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-weight: bold;
     color: #fff;
   }
-  
+
   .banner_header {
     display: flex;
     align-items: center;
@@ -16,19 +16,19 @@
   
   .banner_title {
     transition: 0.3s;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
   }
-  
+
   .banner_header h1 {
     transition: 0.3s;
     color: rgb(255, 0, 0);
     font-size: 4rem;
-    margin-right: 0.5em;
+    margin-right: 0.2em;
   }
-  
+
   .banner_header p {
     transition: 0.3s;
     color: rgb(255, 255, 255);
@@ -51,7 +51,8 @@
   
   .banner_buttons {
     transition: 0.3s;
-    margin-top: 2em;
+    margin-top: 1.3em;
+    margin-left: 1em;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -62,8 +63,8 @@
   }
   
   .banner_button {
-    width: 220px;
-    height: 55px;
+    width: 200px;
+    height: 45px;
     background-color: rgba(224, 224, 224, 1);
     color: rgb(0, 0, 0);
     font-size: 1.2rem;
@@ -106,5 +107,5 @@
   .banner_position {
     display: flex;
     flex-direction: column;
-    margin-top: 10em;
+    margin-top: 12em;
   }

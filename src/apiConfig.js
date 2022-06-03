@@ -89,17 +89,7 @@ import axios from 'axios';
           return []
         }
       },
-      tryGetRandomValue: async(lang = 'es') => {
-        const url = `${apiMovies.url}${apiMovies.entity.movieById}${apiMovies.latest}${apiMovies.apiKey}${apiMovies.language[lang]}`;
-        try {
-          const res = await axios(url)
-          return res.data.results;
-        } catch (error) {
-          return []
-        }
+      tryGetImg: (path, quality = apiQuality.posterw500) => {
+        return `${apiMovies.imageUrl}${apiMovies.quality[quality]}${path}`;
       },
-      tryGetImg: async (path, quality = apiQuality.backdropw1280) => {
-        const url = `${apiMovies.imageUrl}${apiMovies.quality[quality]}${path}`;
-        return url;
-      }
     };

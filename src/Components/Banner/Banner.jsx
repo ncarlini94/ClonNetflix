@@ -5,7 +5,9 @@ import Separator from "../Separator/Separator";
 import styles from "./Banner.module.css";
 
 const Banner = () => {
-const [movie, loading, randomValue, randomImg] = useApi(apiEntity.popularMovies);
+const [movie, loading, error, randomValue, randomImg] = useApi(
+    apiEntity.popularMovies,
+);
 
 
 return (
